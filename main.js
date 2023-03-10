@@ -2,7 +2,9 @@
 let toggleswitch = document.getElementById('toggleSwitch');
 let body = document.querySelector('body');
 let h1 = document.querySelector('h1');
-let itemsList = document.querySelectorAll('.item');
+let h2 = document.querySelector('h2');
+let p = document.querySelector('p');
+let cardsList = document.querySelectorAll('.card');
 
 /* Função que é chamada pelo onChanged ao clicar no ToggleSwitch */
 function alteraTema() {
@@ -10,51 +12,35 @@ function alteraTema() {
     // Verifica qual o valor que é retornado pelo Switch
     //console.log(switchValue.checked);
 
-    if (toggleswitch.checked) { //Caso seja verdadeiro, ou seja, está selecionado
+    if (toggleswitch.checked) { //Caso seja verdadeiro, ou seja, o botão foi clicado
 
         /* Adicionando as classes (dark-mode) css nos elementos capturados */
-        body.classList.add('body-dark');
-        h1.classList.add('h1-dark');
-
-        //1) Utilizando For..Of
-        /*  for (let item of itemsList) {
-             item.classList.add('items-dark')
-             item.classList.add('items-text-dark')
-         } */
-
-        //2) Percorrendo com o ForEach (Recomendado)
-        itemsList.forEach(item => {
-            item.classList.add('items-dark');
-            item.classList.add('items-text-dark');
+        cardsList.forEach(card => {
+            card.classList.add('cards-dark');
+            body.classList.add('body-dark');
+            h1.classList.add('h1-dark');
+            h2.classList.add('h2-dark');
+            p.classList.add('p-dark');
         });
 
-        /* 3) Alterando os elementos específicos ('h2' e 'p') ao invés de colocar a classe na div pai
-         
-        itemsList.forEach(item => {
-             item.classList.add('items-dark');
- 
-             //1 maneira: Alterandos os elementos específicos pelo index/posição no DOM
-             item.children[1].classList.add('items-text-dark') //[1] equivale ao 'h2'
-             item.children[2].classList.add('items-text-dark') //[2] equivale ao 'p'
- 
-             // 2 maneira: Capturando pelo seletor (Recomendado) 
-             item.querySelector('h2').classList.add('items-text-dark')
-             item.querySelector('p').classList.add('items-text-dark')
-         }); */
-
-
-    } else { //Caso seja false, ou seja, não está selecionado
-
+        cardsList.forEach(card => {
+            card.querySelector('h2').classList.add('h2-dark')
+            card.querySelector('p').classList.add('p-dark')
+        });
 
         /* Remove as classes adicionadas anteiormente, assim, a página volta para o "modo-claro" */
-        body.classList.remove('body-dark');
-        h1.classList.remove('h1-dark');
+    } else {
+
+        //body.classList.remove('body-dark');//funcionando
+        // h1.classList.remove('h1-dark');//só o primeiro card
+        // h2.classList.remove('h2-dark');//só o primeiro card
+        // p.classList.remove('p-dark');//só o primeiro card
 
         //Percorre a lista de elementos, para fazer a remoção em cada um dos itens
-        itemsList.forEach(item => {
-            item.classList.remove('items-dark');
-            //Uma forma de alterar o texto (poem o elemento principal)
-            item.classList.remove('items-text-dark');
+        cardsList.forEach(card => {
+            card.classList.remove('cards-dark');
+            p.classList.remove('p-dark');
+            h2.classList.remove('h2-dark');
         });
     }
 }

@@ -5,27 +5,20 @@
   padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
-header {width: 100%;
-    height: 578px;
-    left: 290px;
-    top: 72px;
-    background: #151515;
-border-radius: 12px;
+
+header {
+  width: 100%;
+  height: 578px;
+  left: 290px;
+  top: 72px;
+  background: #151515;
+  border-radius: 12px;
 
 }
 
 body {
   background-color: rgb(219, 219, 219);
   width: 100%;
-}
-
-h1 {
-  padding: .1em 1em;
-  width: 400px;
-  height: 40px;
-  background-color: white;
-  border-bottom: 5px solid lightgrey;
-  color: grey;
 }
 
 .container {
@@ -46,50 +39,57 @@ h1 {
   border: 5px solid lightgray;
 }
 
-.card img {
-  width: 100%;
-  border-radius: 12px;
+h1 {
+  padding: .1em 1em;
+  width: 400px;
+  height: 40px;
+  background-color: white;
+  border-bottom: 5px solid lightgrey;
+  color: grey;
 }
 
-.card h2 {
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h2 {
   font-size: 1em;
   margin-bottom: .2em;
 }
 
-.card p{
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 21px;
-color: black;
+p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: black;
 }
 
 
 /* ------------------------------ Estilos para o tema escuro (Dark-Mode) ----------------------------------------------- */
 
-/* Os seguintes estilos são os que usaremos para aplicar o modo escuro, 
-você terá que modificar os seletores a fim de poder resolver o exercício. */
 
-/* Funcionando  */
-.body-dark{
+.body-dark {
   background-color: rgb(39, 39, 39);
 }
 
-/* Funcionando*/
-.h1-dark{ 
+.h1-dark {
   background-color: rgb(19, 19, 19);
   color: rgb(170, 170, 170);
   border-color: black;
 }
 
-/* Não responde */
-.card-dark{
+.cards-dark {
   background-color: rgb(19, 19, 19);
   border-color: black;
 }
 
-/* Não responde */
-.card-text-dark{
+.h2-dark {
+  color: rgb(230, 230, 230);
+}
+
+.p-dark {
   color: rgb(230, 230, 230);
 }

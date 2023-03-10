@@ -11,28 +11,34 @@
 </head>
 
 <body class="dark">
-    <!-- <header>
+    <header>
         <h1>Criação de Personagem</h1>
-    <Form>
-        <label for="testando">
-            <input type="email" name="email" id="teste">
-        </label> -->
-        <!-- Exemplo de switch, retirado do W3Schools 
-          -> https://www.w3schools.com/howto/howto_css_switch.asp
-        -->
+        <form>
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" />
+            </div>
+            <div>
+                <label for="testando">Email</label>
+                <input type="email" id="testando" />
 
-        <label class="switch" onchange="alteraTema()">
-            <!-- OnChnaged -> Fica obervando 'mudanças' no comportamento do input -->
-            <input type="checkbox" id="toggleSwitch">
-            <span class="slider"></span>
+            </div>
+            <!-- Exemplo de switch, retirado do W3Schools -->
+            <!--   https://www.w3schools.com/howto/howto_css_switch.asp-->
 
-        </label>
-    </Form>
-</header>
+
+            <label class="switch" onchange="alteraTema()> </label>
+                <!-- OnChnaged -> Fica obervando 'mudanças' no comportamento do input -->
+                <input type=" checkbox" id="toggleSwitch"  />
+                <span class=" slider"></span>
+
+           
+        </form>
+    </header>
     <main>
         <h1>Personagens Criados</h1>
         <div class="container">
-            
+
             <div class="card">
                 <img src="./imagens/LeaoBranco.png" alt="LeaoBranco">
                 <h2>Godfrey, the first Elden lord</h2>
