@@ -93,3 +93,16 @@ p {
 .p-dark {
   color: rgb(230, 230, 230);
 }
+@media (max-width:1023px){
+
+  main {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header {
+  text-align: center;
+}
+
+}
