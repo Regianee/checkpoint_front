@@ -6,13 +6,23 @@ let h2 = document.querySelector('h2');
 let p = document.querySelector('p');
 let cardsList = document.querySelectorAll('.card');
 
+
+
+
+
+
+
+
+
+
+
+
 /* Função que é chamada pelo onChanged ao clicar no ToggleSwitch */
 function alteraTema() {
 
     // Verifica qual o valor que é retornado pelo Switch
     //console.log(switchValue.checked);
-
-
+//--------------Validações-----------------------------//
 
     //------------if else para quando o botão for clicado------------------\\
 
